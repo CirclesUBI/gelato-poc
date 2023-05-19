@@ -1,0 +1,28 @@
+{
+  "name": "gelato-poc",
+  "version": "0.0.0",
+  "description": "Gelato PoC for testing payless transactions with Gelato 1Balance",
+  "main": "src/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start": "node src/index"
+  },
+  "dependencies": {
+    "@circles/circles-contracts": "^3.3.1",
+    "@circles/safe-contracts": "=1.0.14",
+    "@gelatonetwork/relay-sdk": "4.0.0",
+    "@gnosis.pm/safe-contracts": "^1.3.0",
+    "@safe-global/protocol-kit": "^1.0.0",
+    "@safe-global/relay-kit": "^1.0.0",
+    "truffle": "5.9.0",
+    "web3": "1.10.0"
+  },
+  "devDependencies": {
+    "@safe-global/safe-core-sdk-types": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "typescript": "5.0.4"
+  }
+}
