@@ -2,7 +2,6 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 
-import fetch from "node-fetch";
 import { ethers } from "ethers";
 import Safe, {
   EthersAdapter,
@@ -95,19 +94,9 @@ const { hubAbi } = getAbis();
         )
         .then(({ taskId }) => {
           console.log(
-            `Getting gelato task status: https://relay.gelato.digital/tasks/status/${taskId}`
-          );
-          return new Promise((resolve, reject) =>
-            setTimeout(
-              () =>
-                fetch(`https://relay.gelato.digital/tasks/status/${taskId}`)
-                  .then((response) => resolve(response.json()))
-                  .catch(reject),
-              2000
-            )
+            `Gelato task status can be found here: https://relay.gelato.digital/tasks/status/${taskId}`
           );
         })
-        .then((result) => console.log(result))
     )
   ).catch((err) => console.error(err));
 })();

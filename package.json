@@ -14,7 +14,6 @@
     "@circles/circles-contracts": "^3.3.2",
     "@gelatonetwork/relay-sdk": "4.0.0",
     "@safe-global/protocol-kit": "^1.0.1",
-    "node-fetch": "^3.3.1",
     "truffle": "5.9.4"
   },
   "devDependencies": {
