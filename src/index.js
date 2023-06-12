@@ -29,7 +29,7 @@ const { hubAbi } = getAbis();
     ACCOUNT_PRIVATE_KEY,
     new ethers.providers.JsonRpcProvider(RPC_URL)
   );
-  // Create ethers signer adaptar for safe-sdk.
+  // Create ethers signer adapter for safe-sdk.
   const ethAdapter = new EthersAdapter({
     ethers,
     signerOrProvider: signer,
